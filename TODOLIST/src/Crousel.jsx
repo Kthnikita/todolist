@@ -5,19 +5,19 @@ function Crouselsec() {
      <div className='h-80  border-black '>
          <Carousel>
       <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+        src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cXVvdGV8ZW58MHx8MHx8fDA%3D"
         alt="image 1"
-        className="h-full w-full object-cover"
+        className="h-full w-full "
       />
       <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        src="https://images.unsplash.com/photo-1554290712-e640351074bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHF1b3RlfGVufDB8fDB8fHww"
         alt="image 2"
-        className="h-full w-full object-cover"
+        className="h-full w-full "
       />
       <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+        src="https://plus.unsplash.com/premium_photo-1694743671394-60034a1b2f65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cXVvdGV8ZW58MHx8MHx8fDA%3D"
         alt="image 3"
-        className="h-full w-full object-cover"
+        className="h-full w-full"
       />
     </Carousel>
      </div>
