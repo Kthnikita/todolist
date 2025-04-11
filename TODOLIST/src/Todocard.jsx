@@ -25,16 +25,28 @@ function Todocard({todo,settodos,open}) {
         })
     }
   return (
-    <div className='h-[300px] rounded-lg p-3 w-[300px] bg-[#48A6A7] flex flex-col gap-3 '>
+    <div className='h-[300px] rounded-lg p-3 w-[300px] bg-[#48A6A7] flex flex-col justify-between'>
+    <div className='flex flex-col gap-3'>
       <div className='flex justify-between items-center'>
-      <h2 className='font-semibold'>{todo.title}</h2>
-      <button onClick={toggel}>{todo.iscompleted?"✅" : <div className='h-4 w-4 border border-black rounded'/>}</button>   
+        <h2 className='font-semibold text-lg text-white'>{todo.title}</h2>
+        <button onClick={toggel}>
+          {todo.iscompleted ? "✅" : <div className='h-4 w-4 border border-black rounded' />}
+        </button>
       </div>
-      <h4 className='font-semibold'>Description</h4>
-      <p>{todo.description}</p>
-      <button className=' h-8 w-20 border border-black bg-red-300 rounded' onClick={remove}>Remove</button>
-      <button className=' h-8 w-20 border border-black bg-red-300 rounded' >Edit</button>
+  
+      <h4 className='font-semibold text-white text-sm'>Description</h4>
+      <p className='text-white text-sm'>{todo.description}</p>
     </div>
+  
+    <div className='flex justify-center'>
+      <button
+        className='h-8 w-20 border border-black bg-red-300 rounded hover:bg-red-400 transition'
+        onClick={remove}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
   )
 }
 
