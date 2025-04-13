@@ -50,7 +50,7 @@ function Todocard({todo,settodos,open,close}) {
       Remove
     </button>
     <button
-      className='h-8 w-20 text-sm font-semibold border border-black-400 bg-white/20 bg-green-300 text-white rounded'
+      className='h-8 w-20 text-sm font-semibold border border-black-400 bg-white/20 bg-green-400 text-white rounded'
       onClick={() => setShowEdit(true)}
     >
       Edit

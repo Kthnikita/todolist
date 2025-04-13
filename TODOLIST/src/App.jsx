@@ -15,10 +15,7 @@ function App() {
     setisopen(false);
   }
   return (
-    <div className="bg-gradient-to-r from-[#A0D8E6] to-[#FFFFFF]
-
-
-">
+    <div>
       {isopen && <Addtaskmodal close={closemodal} settodo={setdetail}  openModal={openmodal}/>}
       <Navbar/>
       <Crouselsec/>
