@@ -27,7 +27,7 @@ function Modify({ todo, settodos, close }) {
         >x</button>
         <input value={title} onChange={(e) => settitle(e.target.value)} type="text" className='h-8 w-full p-3' placeholder='Enter todo title..' />
         <textarea value={description} onChange={(e) => setdes(e.target.value)} className='h-40 p-3 w-full' placeholder='Add Description...'></textarea>
-        <button className='h-8 w-20 border border-black bg-[#48A6A7] rounded' onClick={edit}>Save Changes</button>
+        <button className='h-8 w-36 p-3 border border-black bg-[#48A6A7] rounded' onClick={edit}>Save Changes</button>
       </div>
     </div>
   );
