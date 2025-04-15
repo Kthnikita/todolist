@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Addtaskmodal({close,settodo}) {
+function Addtaskmodal({close,settodo,theme}) {
   const[title,settitle]=useState("");
   const[description,setdes]=useState("");
   function addtodo(){
@@ -13,7 +13,7 @@ function Addtaskmodal({close,settodo}) {
   }
   return (
     <div className='fixed inset-0 z-50 top-0 left-0 w-full h-full bg-black/ backdrop-blur-sm flex justify-center items-center' onClick={close}>
-  <div className='h-[40vh] relative w-[60vh] bg-[#9ACBD0] rounded-md p-5 flex flex-col gap-5 items-center' onClick={(e) => { e.stopPropagation() }}>
+  <div className={`${theme==="light"?'h-[40vh] relative w-[60vh] bg-[#9ACBD0] rounded-md p-5 flex flex-col gap-5 items-center':'h-[40vh] relative w-[60vh] bg-[#3C3D37] rounded-md p-5 flex flex-col gap-5 items-center'}`} onClick={(e) => { e.stopPropagation() }}>
     <button
       className='absolute top-0 right-0 text-white bg-blue-500 rounded-full w-4 h-4 flex items-center justify-center text-sm font-bold shadow-md transition'
       onClick={close}
