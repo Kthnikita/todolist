@@ -36,7 +36,7 @@ function Todocard({ todo, settodos, open, close, view, theme }) {
   `;
 
   const listStyle = `
-    ${baseStyle} w-full p-4 flex justify-between items-start gap-4
+    ${baseStyle} w-full  p-4 flex justify-between items-start gap-4
   `;
 
   return (
@@ -51,7 +51,7 @@ function Todocard({ todo, settodos, open, close, view, theme }) {
 
         <div className="flex flex-col gap-1 mt-2">
           <h4 className="font-semibold text-white text-sm">Description</h4>
-          <p className="text-white text-sm line-clamp-3">{todo.description}</p>
+          <p className={`${view==="grid"?"text-white text-sm line-clamp-3":"text-white text-sm truncate w-60"}`}>{todo.description}</p>
         </div>
 
         {view === 'grid' && (
